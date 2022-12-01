@@ -1,4 +1,4 @@
-<h1>servicios<> 
+<h1>servicios</h1> 
  
  lstlibro = new Array()
   private libColecction: AngularFirestoreCollection<libro>;
