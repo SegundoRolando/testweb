@@ -1,0 +1,14 @@
+<p>Rolanod Calle</p>
+<p>Formulario Crear</p>
+<form action="">
+    <label for="txtcodigo">Codigo</label>
+    <input id="txtcodigo" name="txtcodigo" [(ngModel)]="lib.codigo"/> <br/>
+    <label for="txtnombre">Nombre</label>
+    <input id="txtnombre" name="txtnombre" [(ngModel)]="lib.nombre"/><br/>
+    <label for="txtautor">Autor</label>
+    <input id="txtautor" name="txtautor" [(ngModel)]="lib.autor"/><br/>
+    <button (click)="guardar()">Guardar</button>
+    
+</form>
+<button (click)="gonewpage()">ListarProductos</button>
+

@@ -1,0 +1,21 @@
+<p>Rolando Calle</p>
+<p>listado</p>
+<p>Formulario para crear Productos</p> <button (click)="gonewpage()">Nuevo Producto</button>
+
+<table>
+    <tr>
+        <th>Codigo</th>
+        <th>Nombre</th>
+        <th>Autor</th>
+        <th>Acciones</th>
+    </tr>
+    <tr *ngFor="let l of  libros | async">
+        <td>{{l.codigo}}</td>
+        <td>{{l.nombre}}</td>
+        <td>{{l.autor}}</td>
+        <td><button (click)="editProduct(l)">Editar</button></td>
+        <td><button (click)="eliminarProduct(l)">Eliminar</button></td> 
+    </tr>
+</table>
+
+
